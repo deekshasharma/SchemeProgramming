@@ -1,7 +1,8 @@
 This is an automated theorem prover. When provided with a series of facts, your
 program should be able to determine whether an additional fact can be validly inferred.
 
-Basic Version:
+**Basic Version**
+
 Implementation of a statement resolution algorithm. It accepts statements in an abbreviated form of conjunctive
 normal form (CNF), where each argument is a list of elements that are implicitly or’d together (a disjunction of
 variables). The function return one of the following responses:
@@ -30,7 +31,8 @@ guile> (resolve ‘(a) ‘((NOT a)))
 CONTRADICTION
 ```
 
-Intermediate Version:
+**Intermediate Version**
+
 Implementation of a propositional logic solver that accepts statements in CNF and then performs resolution to answer
 propositional logic questions.The solver implements a tell and ask interface on top of
 the resolver from the basic assignment, using the same syntax for disjunctive statements. The ask function
@@ -51,7 +53,8 @@ guile> (ask ‘(d))
 UNKNOWN
 ````
 
-Advanced Version:
+**Advanced Version**
+
 Implementation of a propositional logic solver that accepts arbitrary propositional statements, converts them into CNF
 and then performs resolution to answer propositional logic questions. In this implementation, the operators need
 only support binary and unary operations, as indicated below (i.e., you don’t have to support (OR a b c), but
